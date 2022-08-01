@@ -48,6 +48,18 @@ font-size: large;
   flex-direction: row;
   align-items: center;
   font-size: x-large;
+ animation-duration: 3s;
+ animation-name: aparecer;
+ animation-iteration-count: infinite;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .fondo > .fraseDos {
@@ -60,8 +72,17 @@ font-size: large;
   display: flex;
   flex-direction: row-reverse;
   font-size: x-large;
-
- 
+  animation-duration: 3s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite;
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .fondo > .logo {
