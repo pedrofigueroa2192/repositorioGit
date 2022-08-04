@@ -1,0 +1,410 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+/* inicio.html*/
+.fondo{
+  background-color: black;
+  color: yellow;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 500px 800px;
+  grid-template-rows: 150px 150px 150px 150px;
+
+  grid-template-areas: 
+  "imagenTraining menuNavegacion" 
+  "imagenTraining fraseUno" 
+  "imagenTraining fraseDos" 
+  "imagenTraining logo" ;
+}
+.fondo > .menuNavegacion {
+ grid-row: 1/2;
+ grid-column: 2/3;
+}
+.menuNavegacion >* {
+display: flex;
+flex-direction: row-reverse;
+font-size: large;
+color: yellow;
+text-decoration: underline;
+
+}
+
+.fondo > .imagenTraining{
+  grid-row: 1/5;
+  grid-column: 1/2;
+}
+
+.imagenTraining img{
+  padding-top: 30px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  width: 500px;
+  height: 600px
+}
+
+.fondo > .fraseUno {
+  grid-row: 2/3 ;
+  grid-column: 2/3 ;
+}
+
+.fraseUno {
+  padding-left: 100px;
+  padding-top: 120px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: x-large;
+}
+
+.fondo > .fraseDos {
+  grid-row: 3/4 ;
+  grid-column: 2/3 ;
+}
+
+.fraseDos {
+  padding-right: 100px;
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: x-large;
+
+ 
+}
+
+.fondo > .logo {
+  grid-row: 4/5 ;
+  grid-column: 2/3;
+}
+
+.logo{
+  padding-left: 510px;
+  display: flex;
+  flex-direction: column-reverse;
+  text-decoration: underline;
+  font-size: xx-large;
+
+}
+ 
+
+  /*inicio celular*/
+
+  @media (max-width: 600px) {
+    .fondo{
+      display: grid;
+      gap: 5px;
+      grid-template-columns: 400px 200px;
+      grid-template-rows: 50px 50px 50px 200px;
+  
+      grid-template-areas: 
+      "logo menuNavegacion" 
+      "fraseUno fraseUno" 
+      "fraseDos fraseDos" 
+      "imagenTraining imagenTraining" ;
+    }
+
+    .fondo > .menuNavegacion {
+      grid-row: 1/2;
+      grid-column: 2/3;
+     }
+     .menuNavegacion >* {
+     display: flex;
+     flex-direction:column-reverse;
+     gap: 5px;
+     font-size: small;
+     }
+     
+     .fondo > .imagenTraining{
+       grid-row: 4/5;
+       grid-column: 1/3;
+     }
+     
+     .imagenTraining img{
+       padding-top: 30px;
+       padding-left: 150px;
+       display: flex;
+       flex-direction: column;
+       justify-items: center;
+       width: 300px;
+       height: 150px
+     }
+     
+     .fondo > .fraseUno {
+       grid-row: 2/3 ;
+       grid-column: 1/2 ;
+     }
+     
+     .fraseUno {
+       padding-left: 10px;
+       padding-top: 10px;
+       display: flex;
+       flex-direction: row;
+       align-items: flex-start;
+       font-size: medium;
+     }
+     
+     .fondo > .fraseDos {
+       grid-row: 3/4 ;
+       grid-column: 1/3 ;
+     }
+     
+     .fraseDos {
+       padding-left: 10px;
+       display: flex;
+       flex-direction: row-reverse;
+
+       font-size: medium;
+     
+      
+     }
+     
+     .fondo > .logo {
+       grid-row: 1/2 ;
+       grid-column: 1/2;
+     }
+     
+     .logo{
+       padding-left: 10px;
+       display: flex;
+       flex-direction: column;
+       text-decoration: underline;
+       font-size:medium;
+     
+     }
+
+    }
+  /* rutinas*/
+
+.fondo2 {
+  background-color: black;
+  color: yellow;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 260px 260px 260px 260px 260px;
+  grid-template-rows: 150px 50px 150px 150px 100px;
+
+  grid-template-areas: 
+  "tituloUno tituloUno tituloUno tituloUno tituloUno"
+  "tituloDos  tituloDos  tituloTres  tituloTres tituloTres "
+  "rutinasHombre imagenHombre imagenHombre rutinasMujer imagenMujer"
+  "logo           logo      logo  logo         logo"
+  "logo           logo      logo  logo         logo"
+  ;
+}
+
+.fondo2 > .tituloUno {
+  grid-column: 1/6;
+  grid-row: 1/2;
+}
+
+.tituloUno {
+  display: flex;
+  padding-top: 10px;
+  padding-left: 400px;
+  flex-direction: row;
+  align-items: center;
+  font-size: x-large;
+}
+
+.fondo2 > .tituloDos {
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+
+.tituloDos {
+  display: flex;
+  padding-top: 10px;
+  padding-left: 150px;
+  flex-direction: row;
+  align-items: flex-start;
+  text-decoration: underline;
+  font-size: large;
+}
+
+.fondo2 > .tituloTres {
+  grid-column: 4/6;
+  grid-row: 2/3;
+}
+
+.tituloTres {
+  display: flex;
+  padding-top: 10px;
+  padding-right: 100px;
+  flex-direction: row-reverse;
+  text-decoration: underline;
+  font-size: large;
+}
+
+.fondo2 > .rutinasHombre {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.rutinasHombre {
+  display: flex;
+  padding-top: 10px;
+  padding-left: 30px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.fondo2 > .imagenHombre {
+  grid-column: 2/4;
+  grid-row: 3/4;
+
+}
+
+.imagenHombre img {
+  display: flex;
+  padding-left: 10px;
+  flex-direction: row;
+  align-items: center;
+  width: 250px;
+  height: 300px;
+}
+
+.fondo2 > .rutinasMujer {
+  grid-column: 4/6;
+  grid-row: 3/4;
+}
+
+.rutinasMujer {
+  display: flex;
+  padding-top: 10px;
+  padding-left: 30px;
+  flex-direction: row;
+  align-items: center;
+}
+.fondo2 > .imagenMujer {
+  grid-column: 5/6;
+  grid-row: 3/4;
+
+}
+
+.imagenMujer img {
+  display: flex;
+  padding-left: 10px;
+  flex-direction: row;
+  align-items: center;
+  width: 250px;
+  height: 300px;
+}
+
+.fondo2 > .logo2 {
+  grid-column: 1/6;
+  grid-row: 4/6;
+}
+
+.logo2 {
+  padding-left: 1000px;
+  display: flex;
+  flex-direction: column-reverse;
+  text-decoration: underline;
+  font-size: xx-large;
+}
+
+/*rutinas celular*/
+
+@media (max-width: 600px) {
+  .fondo2 {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 70px 70px 70px 70px 70px;
+  
+    grid-template-areas: 
+    "logo       logo       logo"
+    "tituloUno  tituloUno  tituloUno"
+    "tituloDos  tituloDos  tituloTres"
+    "rutinasHombre rutinasHombre rutinasMujer"
+    "imagenMujer  imagenMujer  imagenMujer"
+    ;
+  }
+
+  .fondo2 > .logo {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-left: 5px;
+  }
+
+  .fondo2 > .tituloUno {
+    grid-column: 1/4;
+    grid-row: 2/3;
+  }
+
+  .tituloUno {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 100px;
+  }
+
+  .fondo2 > .tituloDos {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+
+  .tituloDos {
+    display: flex;
+    flex-direction: row;
+    padding-left: 15px;
+  }
+
+  .fondo2 > .tituloTres {
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+
+  .tituloTres {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 15px;
+  }
+
+  .fondo2 > .rutinasHombre {
+    grid-column: 1/3;
+    grid-row: 4/5;
+  }
+
+  .rutinasHombre {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .fondo2 > .rutinasMujer {
+    grid-column: 3/4;
+    grid-row: 4/5;
+  }
+
+  .rutinasMujer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    padding-right: 70px;
+  }
+
+  .fondo2 > .imagenMujer {
+    grid-column: 1/4;
+    grid-row: 5/6;
+  }
+
+  .imagenMujer img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 170px;
+  }
+
+}
+ 
