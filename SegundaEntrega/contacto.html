@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FITNESS-LIFE</title>
+    <link rel="stylesheet" href="inicio.css">
+</head>
+<body class="fondo">
+    <form action="guardar.php" method="POST"> <!-- guarda la info en lenguaje de backend y metodo de envio de info-->
+    <header class="tituloUno">
+        <h2> PROHIBIDO RENDIRSE!!!</h2>
+    </header>
+    <div class="imagenTrainingDos">
+        <img src="Imagenes/imagen training.jpg" alt="imagen training">
+    </div>
+    <section class="tituloDos">
+        <h3> CONTACTO </h3>
+    </section>
+    <nav class="formulario">
+        <div> 
+            <label for="nombre"> Nombre: </label> <br>
+            <input type="text" name="nombre"/>
+        </div>
+        <div>
+            <label for="correo electronico"> Correo electronico: </label> <br>
+            <input type="email" name="correo electronico"/>
+        </div>
+            <div> <!--botones de radio-->
+                <label for="genero"> Genero: </label> <br>
+                <input type="radio" name="genero" value="femenino"> femenino
+                <input type="radio" name="genero" value="masculino"> masculino
+            </div>
+            <form> <!-- caja de texto -->
+                <label for="comentarios"> Comentarios: </label> <br>
+                <input type="text" name="comentarios"/>
+                
+            </form>
+        
+            <form>
+                <input type="submit" value="Enviar"/>
+            </form>
+
+    </nav>
+    
+    </form>
+
+        <footer class="logo">
+            <h2>  #FITNESS-LIFE.COM </h2> <!-- falta subrayar-->
+        </footer>
+   
+</body>
+</html>
