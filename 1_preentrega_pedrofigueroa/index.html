@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de Momios</title>
+</head>
+<body>
+    <section class="formulario">
+        <h3> Calculardora de Ganancias $$$ </h3>
+        <span> Selecciona el tipo de momio: </span>
+        <select class= "control" name="tipo de momio" id="tipo_momio"> 
+            <option value="Americano"> Americano </option>
+            <option value="Decimal"> Decimal</option>
+        </select> 
+        <input class="control" type="text" name="valor del momio" id="valor_momio" placeholder="Ingrese el valor del momio">
+        <input class="control" type="text" name="monto" id="monto_apostar" placeholder="Ingrese el monto a apostar (MXN)">
+        <input class="boton" type="button" value="calcular" onclick= calcular();>
+        <input class="control" type="text" name="ganancia" id="monto_ganancia" placeholder="(MXN)">
+    </section>
+    <script src="/1_preentrega_pedrofigueroa/simulador_momios.js"></script>
+</body>
+</html> 
